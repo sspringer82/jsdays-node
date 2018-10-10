@@ -1,6 +1,11 @@
 const render = require('./view');
-const data = require('./model');
+const model = require('./model');
 
-module.exports = (req, res) => {
-  res.send(render(data));
+module.exports = async (req, res) => {
+  try {
+    const data = await model.getItems();
+    res.send(render(data));
+  } catch (e) {
+    res.sendStatus(500);
+  }
 };
