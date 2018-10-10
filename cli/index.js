@@ -2,21 +2,19 @@ const question = require('./question');
 const getNumber = require('./util');
 const rl = require('./rl');
 
-// console.log(process.argv);
+const program = require('commander');
 
-if (process.argv.indexOf('-v') > -1) {
-  console.log('Version 1.0');
-}
-
-// question(getNumber(), getNumber())
-//   .then(() => console.log('yes'))
-//   .catch(() => console.log('nope!'))
-//   .finally(() => rl.close());
+program
+  .option('-l, --level [type]', 'Level of difficulty', v => parseInt(v, 10), 1)
+  .parse(process.argv);
 
 (async () => {
   try {
     for (let i = 0; i < 4; i++) {
-      const result = await question(getNumber(), getNumber());
+      const result = await question(
+        getNumber(program.level),
+        getNumber(program.level),
+      );
       if (result) {
         console.log('yes');
       } else {
