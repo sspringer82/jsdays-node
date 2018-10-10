@@ -1,0 +1,23 @@
+{
+  "name": "jsdays-node",
+  "version": "1.0.0",
+  "description": "my fancy cli app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sspringer82/jsdays-node.git"
+  },
+  "keywords": [
+    "cli",
+    "node"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sspringer82/jsdays-node/issues"
+  },
+  "homepage": "https://github.com/sspringer82/jsdays-node#readme"
+}

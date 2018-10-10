@@ -34,6 +34,13 @@ start without break on first line
 
 connect devtools: chrome://inspect
 
+# Start your project
+
+1. .gitignore node_module
+2. npm init
+
+   to create a package.json file
+
 # Links
 
 - https://nodejs.org/en/
