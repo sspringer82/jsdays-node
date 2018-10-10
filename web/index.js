@@ -3,8 +3,6 @@ const morgan = require('morgan');
 const fs = require('fs');
 const path = require('path');
 
-const todoController = require('./todo/controller');
-
 const todoRouter = require('./todo');
 
 const app = express();
@@ -21,7 +19,6 @@ app.use((req, res, next) => {
   next();
 });
 
-//app.use('/todo', todoRouter);
-app.get('/', todoController);
+app.use('/todo', todoRouter);
 
 app.listen(8080, () => console.log('I am listening!'));
