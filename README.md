@@ -41,6 +41,12 @@ connect devtools: chrome://inspect
 
    to create a package.json file
 
+# Modules
+
+node --experimental-modules module.mjs
+
+file ending: .mjs
+
 # Links
 
 - https://nodejs.org/en/
