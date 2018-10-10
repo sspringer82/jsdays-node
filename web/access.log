@@ -4,3 +4,6 @@
 ::1 - - [10/Oct/2018:12:57:18 +0000] "GET /todo HTTP/1.1" 200 43 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3558.0 Safari/537.36"
 ::1 - - [10/Oct/2018:12:57:20 +0000] "GET /todo HTTP/1.1" 200 43 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3558.0 Safari/537.36"
 ::1 - - [10/Oct/2018:12:58:50 +0000] "GET /todo HTTP/1.1" 200 43 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3558.0 Safari/537.36"
+::1 - - [10/Oct/2018:13:01:55 +0000] "GET /todo HTTP/1.1" 500 21 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3558.0 Safari/537.36"
+::1 - - [10/Oct/2018:13:02:15 +0000] "GET /todo HTTP/1.1" 500 21 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3558.0 Safari/537.36"
+::1 - - [10/Oct/2018:13:02:42 +0000] "GET /todo HTTP/1.1" 200 299 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3558.0 Safari/537.36"
