@@ -22,7 +22,6 @@ app.use((req, res, next) => {
 });
 
 //app.use('/todo', todoRouter);
-
 app.get('/', todoController);
 
 app.listen(8080, () => console.log('I am listening!'));
