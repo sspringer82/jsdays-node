@@ -1,28 +1,30 @@
+const question = require('./question');
+const getNumber = require('./util');
+const rl = require('./rl');
+
 // console.log(process.argv);
 
 if (process.argv.indexOf('-v') > -1) {
   console.log('Version 1.0');
 }
 
-function getNumber() {
-  return Math.floor(Math.random() * 10);
-}
+// question(getNumber(), getNumber())
+//   .then(() => console.log('yes'))
+//   .catch(() => console.log('nope!'))
+//   .finally(() => rl.close());
 
-const readline = require('readline');
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
-
-const n1 = getNumber();
-const n2 = getNumber();
-
-rl.question(`what is ${n1} + ${n2}? `, answer => {
-  if (parseInt(answer, 10) === n1 + n2) {
-    console.log('🎉🏆');
-  } else {
-    console.log('💩');
+(async () => {
+  try {
+    for (let i = 0; i < 4; i++) {
+      const result = await question(getNumber(), getNumber());
+      if (result) {
+        console.log('yes');
+      } else {
+        console.log('no');
+      }
+    }
+  } catch (e) {
+    console.error('you fool', e);
   }
   rl.close();
-});
+})();
