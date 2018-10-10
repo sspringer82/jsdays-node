@@ -15,3 +15,28 @@ sebastian.springer@maibornwolff.de
 # Repo
 
 https://github.com/sspringer82/jsdays-node
+
+# Run
+
+REPL (Shell): node
+
+With file: node index.js
+
+# Debug
+
+node --inspect-brk index.js
+
+Start with break on first line
+
+node --inspect index.js
+
+start without break on first line
+
+connect devtools: chrome://inspect
+
+# Links
+
+- https://nodejs.org/en/
+- https://nodejs.org/en/download/package-manager/
+- https://code.visualstudio.com/docs/nodejs/nodejs-debugging
+- https://www.jetbrains.com/help/webstorm/running-and-debugging-node-js.html
