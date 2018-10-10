@@ -1,10 +1,14 @@
-const http = require('http');
+const express = require('express');
 
-const server = http.createServer((req, res) => {
-  // res.write("what's up?");
-  res.end('Hello World');
+const app = express();
+
+// npm install morgan
+
+app.use((req, res, next) => {
+  console.log('I am your middleware');
+  next();
 });
 
-server.listen(8080, () => {
-  console.log('server is listening');
-});
+app.get('/', (req, res) => res.send('Hello world'));
+
+app.listen(8080, () => console.log('I am listening!'));
