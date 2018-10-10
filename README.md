@@ -52,3 +52,4 @@ connect devtools: chrome://inspect
 - https://github.com/joaojeronimo/rimrafall
 - https://github.com/verdaccio/verdaccio
 - https://github.com/DefinitelyTyped/DefinitelyTyped
+- https://github.com/airbnb/javascript
