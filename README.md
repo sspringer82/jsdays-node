@@ -47,3 +47,8 @@ connect devtools: chrome://inspect
 - https://nodejs.org/en/download/package-manager/
 - https://code.visualstudio.com/docs/nodejs/nodejs-debugging
 - https://www.jetbrains.com/help/webstorm/running-and-debugging-node-js.html
+- https://docs.npmjs.com/misc/scripts
+- https://www.npmjs.com/package/semver
+- https://github.com/joaojeronimo/rimrafall
+- https://github.com/verdaccio/verdaccio
+- https://github.com/DefinitelyTyped/DefinitelyTyped
